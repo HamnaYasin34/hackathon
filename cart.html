@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search-Filter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/nav.css" /> -->
+  </head>
+  <body>
+    <!-- cart Screen -->
+    <div class="cart" id="cart">
+
+      <div class="cart-head">
+        <h3 class="closeBtn" onclick="closeBtn()">x</h3>
+        <center><h1>my Cart</h1></center>
+      </div>
+
+      <div class="cart-body" id="cart-body">
+        <center>your cart is empty...</center>
+      </div>
+
+      <div class="cart-footer">
+       <center>Total Price: <span id="cartTotal">0</span> PKR</center>
+       <center><button class="btn" onclick="clearCart()">clear cart</button></center>
+    </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">PRODUCTS <center></div>
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search..."
+        oninput="handleSearch(this.value)"
+      />
+      <b class="cartIcon" onclick="toggleCart()">cart <span id="cartLength"> 0</span></b>
+    </div>
+    <div class="product-section" id="productSection"></div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
