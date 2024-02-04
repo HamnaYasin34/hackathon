@@ -296,7 +296,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
                 icon: "success"
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = "home.html";
+                    window.location.href = "index.html";
                 }
             })
         };
