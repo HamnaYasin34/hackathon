@@ -140,4 +140,21 @@ body{
       margin-top: 30px;
       color: #fff;
     }
+
+@media (min-width: 200px) and (max-width: 768px) {
+ .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh !important;
+    width: 100% !important;
+    padding: 0 10px;
+  }  
+  .wrapper {
+    width: 500px !important;}
+    nav ul li a:hover {
+      padding-bottom: 20px !important;
+      border-bottom: none !important;
+      color: #646464;
+    }}
    
